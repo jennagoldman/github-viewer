@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsernameInput matches a snapshot 1`] = `
+<Fragment>
+  <input
+    name="username"
+    onChange={[Function]}
+    type="text"
+    value="jennagoldman"
+  />
+</Fragment>
+`;
