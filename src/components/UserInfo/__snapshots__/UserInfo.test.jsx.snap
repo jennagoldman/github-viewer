@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserInfo matches a snapshot 1`] = `
+<div>
+  <span>
+    Jenna Goldman
+  </span>
+  <span>
+    2
+     followers
+  </span>
+  <a
+    href="https://github.com/jennagoldman"
+  >
+    View profile
+  </a>
+</div>
+`;
