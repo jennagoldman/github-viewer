@@ -4,7 +4,7 @@ import UsernameInput from './UsernameInput.jsx';
 
 describe('UsernameInput', () => {
   it('matches a snapshot', () => {
-    const wrapper = shallow(<UsernameInput username="jennagoldman" onUsernameChange={() => {}}/>);
+    const wrapper = shallow(<UsernameInput username="jennagoldman" onUsernameChange={() => {}} onSearch={() => {}}/>);
     expect(wrapper).toMatchSnapshot();
   });
 });

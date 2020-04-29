@@ -2,11 +2,18 @@
 
 exports[`UsernameInput matches a snapshot 1`] = `
 <Fragment>
-  <input
-    name="username"
-    onChange={[Function]}
-    type="text"
-    value="jennagoldman"
-  />
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      name="username"
+      onChange={[Function]}
+      type="text"
+      value="jennagoldman"
+    />
+    <button>
+      Lookup User
+    </button>
+  </form>
 </Fragment>
 `;
