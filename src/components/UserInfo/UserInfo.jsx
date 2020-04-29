@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const UserInfo = ({ name, followerCount, profileLink }) => (
-  <div>
-    <span>{name}</span>
-    <span>{followerCount} followers</span>
-    <a href={profileLink}>View profile</a>
-  </div>
-);
+const UserInfo = ({ name, followerCount, profileLink }) => {
+  if(name) {
+    return <div>
+      <p>{name}</p>
+      <p>{followerCount} followers</p>
+      <a href={profileLink} target="_blank" rel="noopener noreferrer">View {name}'s GitHub Profile</a>
+    </div>;
+  }
+  return null;
+};
 
 UserInfo.propTypes = {
   name: PropTypes.string.isRequired,

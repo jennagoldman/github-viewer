@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import UsernameInput from '../../components/UsernameInput/UsernameInput.jsx';
 import UserInfo from '../../components/UserInfo/UserInfo.jsx';
-import { fetchUser } from '../../services/github.js';
+import { fetchUser, fetchRepos } from '../../services/github.js';
 
 
 export default class User extends Component {
@@ -9,7 +9,8 @@ export default class User extends Component {
     username: '',
     name: '',
     followerCount: '',
-    profileLink: ''
+    profileLink: '',
+    repos: []
   }
 
   handleUsernameChange = ({ target }) => {
@@ -24,14 +25,19 @@ export default class User extends Component {
         this.setState({ followerCount: user.followers });
         this.setState({ profileLink: user.html_url });
       });
+
+    fetchRepos(this.state.username)
+      .then(repos => {
+        this.setState({ repos });
+      });
   };
 
   render() {
-    const { username, name, followerCount, profileLink } = this.state;
+    const { username, name, followerCount, profileLink, repos } = this.state;
     return (
       <>
         <UsernameInput username={username} onUsernameChange={this.handleUsernameChange} onSearch={this.handleSearch} />
-        <UserInfo name={name} followerCount={followerCount} profileLink={profileLink} />
+        <UserInfo name={name} followerCount={followerCount} profileLink={profileLink} repos={repos} />
       </>
     );
   }
