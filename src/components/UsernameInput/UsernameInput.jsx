@@ -5,7 +5,7 @@ const UsernameInput = ({ username, onUsernameChange, onSearch }) => (
   <>
     <form onSubmit={onSearch}>
       <input type="text" name="username" value={username} onChange={onUsernameChange}/>
-      {/* <button>Lookup User</button> */}
+      <button>Lookup User</button>
     </form>
   </>
 );
