@@ -2,17 +2,32 @@
 
 exports[`UserInfo matches a snapshot 1`] = `
 <div>
-  <span>
+  <p>
     Jenna Goldman
-  </span>
-  <span>
+  </p>
+  <p>
     2
      followers
-  </span>
+  </p>
   <a
     href="https://github.com/jennagoldman"
+    rel="noopener noreferrer"
+    target="_blank"
   >
-    View profile
+    View 
+    Jenna Goldman
+    's GitHub Profile
   </a>
+  <Repos
+    repos={
+      Array [
+        Object {
+          "html_url": "https://github.com/jennagoldman/rock-paper-scissors",
+          "id": 1,
+          "name": "rock-paper-scissors",
+        },
+      ]
+    }
+  />
 </div>
 `;

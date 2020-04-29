@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import UserInfo from './UserInfo.jsx';
+import Repos from './Repos.jsx';
 
-describe('UserInfo', () => {
+describe('Repos', () => {
   it('matches a snapshot', () => {
 
     const repos = [
@@ -11,7 +11,7 @@ describe('UserInfo', () => {
         html_url: 'https://github.com/jennagoldman/rock-paper-scissors' }
     ];
 
-    const wrapper = shallow(<UserInfo name="Jenna Goldman" followerCount="2" profileLink="https://github.com/jennagoldman" repos={repos} />);
+    const wrapper = shallow(<Repos repos={repos} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

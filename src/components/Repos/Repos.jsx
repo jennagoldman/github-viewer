@@ -11,9 +11,12 @@ const Repos = ({ repos }) => {
   ));
 
   return (
-    <ul>
-      {repoElements}
-    </ul>
+    <>
+      <p>Repos:</p>
+      <ul>
+        {repoElements}
+      </ul>
+    </>
   );
 };
 

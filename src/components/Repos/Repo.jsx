@@ -2,15 +2,15 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-const Repo = ({ repoUrl, repoName }) => (
+const Repo = ({ name, html_url }) => (
   <>
-    <a href={repoUrl} target="_blank" rel="noopener noreferrer">{repoName}</a>
+    <a href={html_url} target="_blank" rel="noopener noreferrer">{name}</a>
   </>
 );
 
 Repo.propTypes = {
-  repoUrl: PropTypes.string.isRequired,
-  repoName: PropTypes.string.isRequired
+  html_url: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired
 };
 
 export default Repo;
