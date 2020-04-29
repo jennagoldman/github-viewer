@@ -21,9 +21,11 @@ export default class User extends Component {
     event.preventDefault();
     fetchUser(this.state.username)
       .then(user => {
-        this.setState({ name: user.name });
-        this.setState({ followerCount: user.followers });
-        this.setState({ profileLink: user.html_url });
+        this.setState({ 
+          name: user.name,
+          followerCount: user.followers,
+          profileLink: user.html_url
+        });
       });
 
     fetchRepos(this.state.username)
