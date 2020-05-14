@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Repo matches a snapshot 1`] = `
+<Fragment>
+  <a
+    href="https://github.com/jennagoldman/rock-paper-scissors"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    rock-paper-scissors
+  </a>
+</Fragment>
+`;

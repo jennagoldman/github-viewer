@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserInfo matches a snapshot 1`] = `
+<div>
+  <p>
+    Jenna Goldman
+  </p>
+  <p>
+    2
+     followers
+  </p>
+  <a
+    href="https://github.com/jennagoldman"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    View 
+    Jenna Goldman
+    's GitHub Profile
+  </a>
+  <Repos
+    repos={
+      Array [
+        Object {
+          "html_url": "https://github.com/jennagoldman/rock-paper-scissors",
+          "id": 1,
+          "name": "rock-paper-scissors",
+        },
+      ]
+    }
+  />
+</div>
+`;
